@@ -17,6 +17,7 @@ Implement the following tiers to optimize token spend:
 | Tier | Complexity | Threshold | Recommended Model |
 | :--- | :--- | :--- | :--- |
 | **Bulk** | $O(1)$ to $O(N)$ | $C > 0.85$ | DeepSeek-Chat, Llama-3-8B |
+| **Heavy Coding**| Logic/Synthesis| Specialist | Claude-Opus-4.5, Kimi-K2.5, Gemini-3-Pro-High |
 | **Reasoning** | $O(N^2)$ | $C > 0.85$ | Claude-3.5-Sonnet, Gemini-1.5-Pro |
 | **Critical** | Strategic | Manual/Max | Claude-3-Opus, GPT-4o |
 
