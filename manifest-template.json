@@ -1,0 +1,27 @@
+{
+  "name": "mrp-opt-97-agent",
+  "version": "1.0.0",
+  "description": "Template manifest for an MRP-OPT-97 compliant agent.",
+  "capabilities": [
+    {
+      "name": "token_optimization_audit",
+      "description": "Audits agent logs for token inefficiencies.",
+      "inputs": [
+        {
+          "name": "log_artifact",
+          "type": "artifact_reference",
+          "required": true
+        }
+      ],
+      "cost_estimate": {
+        "unit": "tokens",
+        "base": 500,
+        "per_mb": 10
+      }
+    }
+  ],
+  "policy": {
+    "privacy": "no_pii",
+    "retention": "0h"
+  }
+}
