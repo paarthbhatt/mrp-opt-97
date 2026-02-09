@@ -14,12 +14,12 @@ Every interaction MUST follow the MRP handshake:
 ## 3. Tiered Model Architecture
 Implement the following tiers to optimize token spend:
 
-| Tier | Complexity | Threshold | Recommended Model |
+| Tier | Complexity | Threshold | Recommended Model (OSS/Free) |
 | :--- | :--- | :--- | :--- |
-| **Bulk** | $O(1)$ to $O(N)$ | $C > 0.85$ | DeepSeek-Chat, Llama-3-8B |
-| **Heavy Coding**| Logic/Synthesis| Specialist | Claude-Opus-4.5, Kimi-K2.5, Gemini-3-Pro-High |
-| **Reasoning** | $O(N^2)$ | $C > 0.85$ | Claude-3.5-Sonnet, Gemini-1.5-Pro |
-| **Critical** | Strategic | Manual/Max | Claude-3-Opus, GPT-4o |
+| **Bulk** | $O(1)$ to $O(N)$ | $C > 0.85$ | Llama-3.3-70B-Free, DeepSeek-Chat |
+| **Heavy Coding**| Logic/Synthesis| Specialist | DeepSeek-R1-Free, Llama-3.3-70B-Free |
+| **Reasoning** | $O(N^2)$ | $C > 0.85$ | Llama-3.3-70B-Free, Gemini-2.0-Flash-Free |
+| **Critical** | Strategic | Manual/Max | DeepSeek-R1-Free |
 
 ## 4. Evidence Auditing
 Every `EXECUTE` response MUST include an `EVIDENCE` payload containing:
